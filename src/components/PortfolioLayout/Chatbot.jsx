@@ -2,7 +2,6 @@
 // import { FaRobot, FaTimes, FaCompress } from "react-icons/fa";
 
 // const API_KEY = process.env.REACT_APP_GROQ_API_KEY;
-// console.log("Your key is", API_KEY);
 // const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 // const Chatbot = () => {
@@ -49,7 +48,6 @@
 
 // explaintion
 
-
 // 1) AI-Biller — AI-Based Billing System  
 // Developed an AI-powered automated billing system that modernizes the traditional checkout process.
 
@@ -66,7 +64,6 @@
 
 // Tech Stack:
 // Python, YOLO, MongoDB, Express.js, React.js, Node.js
-
 
 // 2) CRIMSON — AI-Based Criminal Activity Detection  
 // CRIMSON is an AI-powered criminal activity detection system designed to assist authorities by identifying criminals, weapons, and violent activities in real time.
@@ -102,7 +99,6 @@
 // - Identification of weapons and violent behavior
 // - Real-time alerts with proof and location details
 
-
 // 3) Ligand Software Solutions Website (Official Company Website)  
 // Website: https://ligandsoftwares.com
 
@@ -122,7 +118,6 @@
 // - Database: MongoDB
 // - Architecture: MERN Stack
 
-
 // 4) Gururaj Foundation Website (NGO Website)  
 // Website: https://gururajfoundation.com
 
@@ -138,7 +133,6 @@
 // Technology Used:
 // - Frontend: React.js / HTML, CSS, JavaScript
 // - Deployment: Web hosting with optimized performance
-
 
 // 5) Ligand Work-Space — Ongoing LMS Project  
 // Website: https://liganddevelopers.vercel.app
@@ -184,7 +178,6 @@
 // Date of Birth: 22 September 2004
 
 // Rules:
-// Rules:
 // 1. Answer STRICTLY using ONLY the information provided in this resume context.
 // 2. Do NOT provide information about topics unrelated to this profile such as emotions, love, games, movies, personal opinions, or general knowledge.
 //     if ask about this say sorry iam not able to respose plz ask prasad's related quetions
@@ -194,7 +187,6 @@
 // 6. Do NOT share GitHub links for any project under any circumstance.
 // 7. If the requested information is not present in this resume or social profiles, respond with:
 //    "Sorry, this information is not available. Please contact Prasad at patilprasad3808@gmail.com or 8549076433."
-
 // `;
 
 //     const scrollToBottom = () => {
@@ -288,10 +280,10 @@
 
 //     if (isMinimized) {
 //         return (
-//             <div style={styles.minimizedContainer} onClick={() => setIsMinimized(false)}>
-//                 <div style={styles.minimizedContent}>
-//                     <FaRobot style={styles.minimizedIcon} />
-//                     <span style={styles.minimizedText}>Ask about Prasad</span>
+//             <div className="minimized-container" onClick={() => setIsMinimized(false)}>
+//                 <div className="minimized-content">
+//                     <FaRobot className="minimized-icon" />
+//                     <span className="minimized-text">Ask about Prasad</span>
 //                 </div>
 //             </div>
 //         );
@@ -302,7 +294,7 @@
 //             {/* Floating Avatar */}
 //             {!isOpen && (
 //                 <div 
-//                     style={styles.avatarContainer}
+//                     className="avatar-container"
 //                     onMouseEnter={() => setIsVisible(true)}
 //                     onMouseLeave={() => setIsVisible(false)}
 //                     onClick={() => {
@@ -312,11 +304,11 @@
 //                         }, 200);
 //                     }}
 //                 >
-//                     <div style={styles.avatar}>
-//                         <FaRobot style={styles.avatarIcon} />
+//                     <div className="avatar">
+//                         <FaRobot className="avatar-icon" />
 //                     </div>
 //                     {isVisible && (
-//                         <div style={styles.speechBubble}>
+//                         <div className="speech-bubble">
 //                             Hi! Ask me about Prasad's skills, projects, and experience.
 //                         </div>
 //                     )}
@@ -325,19 +317,19 @@
 
 //             {/* Chat Window */}
 //             {isOpen && (
-//                 <div style={styles.chatContainer}>
-//                     <div style={styles.chatHeader}>
-//                         <div style={styles.headerLeft}>
-//                             <FaRobot style={styles.headerIcon} />
+//                 <div className="chat-container">
+//                     <div className="chat-header">
+//                         <div className="header-left">
+//                             <FaRobot className="header-icon" />
 //                             <div>
-//                                 <h3 style={styles.headerTitle}>Prasad's AI Assistant</h3>
-//                                 <p style={styles.headerSubtitle}>Ask about my skills, projects & experience</p>
+//                                 <h3 className="header-title">Prasad's AI Assistant</h3>
+//                                 <p className="header-subtitle">Ask about my skills, projects & experience</p>
 //                             </div>
 //                         </div>
-//                         <div style={styles.headerActions}>
+//                         <div className="header-actions">
 //                             <button 
 //                                 onClick={() => setIsMinimized(true)}
-//                                 style={styles.iconButton}
+//                                 className="icon-button"
 //                                 title="Minimize"
 //                                 disabled={loading}
 //                             >
@@ -345,7 +337,7 @@
 //                             </button>
 //                             <button 
 //                                 onClick={clearChat}
-//                                 style={styles.iconButton}
+//                                 className="icon-button"
 //                                 title="Clear Chat"
 //                                 disabled={loading}
 //                             >
@@ -353,7 +345,7 @@
 //                             </button>
 //                             <button 
 //                                 onClick={() => setIsOpen(false)}
-//                                 style={styles.iconButton}
+//                                 className="icon-button"
 //                                 title="Close"
 //                                 disabled={loading}
 //                             >
@@ -362,13 +354,13 @@
 //                         </div>
 //                     </div>
 
-//                     <div style={styles.messagesContainer}>
+//                     <div className="messages-container">
 //                         {showWelcome && (
-//                             <div style={styles.welcomeMessage}>
-//                                 <div style={styles.botMessage}>
+//                             <div className="welcome-message">
+//                                 <div className="bot-message">
 //                                     <strong>🤖 AI Assistant:</strong>
 //                                     <p>Hello! I'm Prasad's AI assistant. You can ask me about Prasad's:</p>
-//                                     <ul style={styles.suggestionList}>
+//                                     <ul className="suggestion-list">
 //                                         <li>📚 Education & qualifications</li>
 //                                         <li>💼 Work experience & skills</li>
 //                                         <li>🚀 Projects </li>
@@ -382,10 +374,10 @@
 //                         {messages.map((msg, i) => (
 //                             <div 
 //                                 key={i} 
-//                                 style={msg.role === "user" ? styles.userMessage : styles.botMessage}
+//                                 className={msg.role === "user" ? "user-message" : "bot-message"}
 //                             >
 //                                 <strong>{msg.role === "user" ? "👤 You:" : "🤖 AI Assistant:"}</strong>
-//                                 <div style={styles.messageContent}>
+//                                 <div className="message-content">
 //                                     {msg.content.split('\n').map((line, idx) => (
 //                                         <p key={idx} style={{ margin: '4px 0' }}>
 //                                             {line}
@@ -396,37 +388,31 @@
 //                         ))}
                         
 //                         {loading && (
-//                             <div style={styles.botMessage}>
+//                             <div className="bot-message">
 //                                 <strong>🤖 AI Assistant:</strong>
-//                                 <div style={styles.typingIndicator}>
-//                                     <span style={styles.dot}></span>
-//                                     <span style={styles.dot}></span>
-//                                     <span style={styles.dot}></span>
+//                                 <div className="typing-indicator">
+//                                     <span className="dot"></span>
+//                                     <span className="dot"></span>
+//                                     <span className="dot"></span>
 //                                 </div>
 //                             </div>
 //                         )}
 //                         <div ref={messagesEndRef} />
 //                     </div>
 
-//                     <div style={styles.inputContainer}>
+//                     <div className="input-container">
 //                         <input
 //                             ref={inputRef}
 //                             value={input}
 //                             onChange={(e) => setInput(e.target.value)}
 //                             onKeyPress={handleKeyPress}
 //                             placeholder="Ask about skills, projects, education..."
-//                             style={{
-//                                 ...styles.input,
-//                                 ...(loading && styles.inputDisabled)
-//                             }}
+//                             className={`chat-input ${loading ? 'disabled' : ''}`}
 //                             disabled={loading}
 //                         />
 //                         <button
 //                             onClick={sendMessage}
-//                             style={{
-//                                 ...styles.sendButton,
-//                                 ...((loading || !input.trim()) && styles.sendButtonDisabled)
-//                             }}
+//                             className={`send-button ${loading || !input.trim() ? 'disabled' : ''}`}
 //                             disabled={loading || !input.trim()}
 //                         >
 //                             {loading ? "..." : "Send"}
@@ -436,560 +422,490 @@
 //             )}
 
 //             <style jsx>{`
-//                 @keyframes bounce {
-//                     0%, 100% { transform: translateY(0); }
-//                     50% { transform: translateY(-5px); }
+//                 /* Floating Avatar - DESKTOP */
+//                 .avatar-container {
+//                     position: fixed;
+//                     bottom: 20px;
+//                     right: 20px;
+//                     z-index: 10000;
+//                     cursor: pointer;
 //                 }
 
-//                 @keyframes fadeIn {
-//                     from { opacity: 0; transform: translateY(10px); }
-//                     to { opacity: 1; transform: translateY(0); }
+//                 .avatar {
+//                     width: 60px;
+//                     height: 60px;
+//                     border-radius: 50%;
+//                     background: linear-gradient(135deg, #424d7eff 0%, #764ba2 100%);
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+//                     border: 3px solid white;
 //                 }
 
-//                 @keyframes pulse {
-//                     0%, 100% { opacity: 1; }
-//                     50% { opacity: 0.5; }
+//                 .avatar-icon {
+//                     font-size: 28px;
+//                     color: white;
 //                 }
 
-//                 @keyframes float {
-//                     0%, 100% { transform: translateY(0px); }
-//                     50% { transform: translateY(-10px); }
+//                 .speech-bubble {
+//                     position: absolute;
+//                     bottom: 70px;
+//                     right: 0;
+//                     background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+//                     color: white;
+//                     padding: 10px 14px;
+//                     border-radius: 18px 18px 4px 18px;
+//                     max-width: 220px;
+//                     font-size: 13px;
+//                     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+//                     border: 1px solid rgba(255, 255, 255, 0.1);
+//                     z-index: 10001;
 //                 }
 
-//                 /* Mobile-specific media queries */
+//                 /* Chat Window - DESKTOP */
+//                 .chat-container {
+//                     position: fixed;
+//                     bottom: 20px;
+//                     right: 20px;
+//                     width: 350px;
+//                     height: 500px;
+//                     background: linear-gradient(135deg, #546f75ff 0%, #6593dbff 100%);
+//                     border-radius: 16px;
+//                     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+//                     display: flex;
+//                     flex-direction: column;
+//                     border: 1px solid rgba(255, 255, 255, 0.1);
+//                     overflow: hidden;
+//                     z-index: 10000;
+//                 }
+
+//                 .chat-header {
+//                     background: linear-gradient(135deg, #484863ff 0%, #463e5aff 100%);
+//                     color: white;
+//                     padding: 14px 16px;
+//                     display: flex;
+//                     justify-content: space-between;
+//                     align-items: center;
+//                     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+//                     flex-shrink: 0;
+//                     height:10vh;
+//                 }
+
+//                 .header-left {
+//                     display: flex;
+//                     align-items: center;
+//                     gap: 10px;
+//                 }
+
+//                 .header-icon {
+//                     font-size: 22px;
+//                 }
+
+//                 .header-title {
+//                     margin: 0;
+//                     font-size: 15px;
+//                     font-weight: 600;
+//                 }
+
+//                 .header-subtitle {
+//                     margin: 0;
+//                     font-size: 11px;
+//                     opacity: 0.9;
+//                 }
+
+//                 .header-actions {
+//                     display: flex;
+//                     gap: 6px;
+//                 }
+
+//                 .icon-button {
+//                     background: rgba(255, 255, 255, 0.1);
+//                     border: none;
+//                     color: white;
+//                     padding: 5px 10px;
+//                     border-radius: 6px;
+//                     cursor: pointer;
+//                     font-size: 11px;
+//                     font-weight: 500;
+//                     display: flex;
+//                     align-items: center;
+//                     gap: 4px;
+//                 }
+
+//                 .icon-button:disabled {
+//                     opacity: 0.5;
+//                     cursor: not-allowed;
+//                 }
+
+//                 /* Messages Container */
+//                 .messages-container {
+//                     flex: 1;
+//                     padding: 16px;
+//                     overflow-y: auto;
+//                     background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+//                     max-height: 400px;
+//                 }
+
+//                 .welcome-message {
+//                     margin-bottom: 16px;
+//                 }
+
+//                 .user-message {
+//                     background: linear-gradient(180deg, #212f4eff 0%, #405c88ff 100%);
+//                     color: white;
+//                     padding: 10px 14px;
+//                     border-radius: 16px 16px 4px 16px;
+//                     margin-bottom: 10px;
+//                     max-width: 85%;
+//                     margin-left: auto;
+//                 }
+
+//                 .bot-message {
+//                     background: rgba(30, 41, 59, 0.8);
+//                     color: #e2e8f0;
+//                     padding: 10px 14px;
+//                     border-radius: 16px 16px 16px 4px;
+//                     margin-bottom: 10px;
+//                     max-width: 85%;
+//                     border: 1px solid rgba(255, 255, 255, 0.05);
+//                 }
+
+//                 .message-content {
+//                     margin-top: 6px;
+//                     font-size: 13px;
+//                     line-height: 1.4;
+//                 }
+
+//                 .suggestion-list {
+//                     margin: 8px 0;
+//                     padding-left: 18px;
+//                     font-size: 13px;
+//                 }
+
+//                 /* Typing Indicator */
+//                 .typing-indicator {
+//                     display: flex;
+//                     align-items: center;
+//                     margin-top: 8px;
+//                 }
+
+//                 .dot {
+//                     width: 7px;
+//                     height: 7px;
+//                     border-radius: 50%;
+//                     background-color: #94a3b8;
+//                     margin: 0 2px;
+//                 }
+
+//                 /* Input Area */
+//                 .input-container {
+//                     padding: 14px;
+//                     border-top: 1px solid rgba(255, 255, 255, 0.1);
+//                     background: rgba(15, 23, 42, 0.9);
+//                     display: flex;
+//                     gap: 8px;
+//                     flex-shrink: 0;
+//                 }
+
+//                 .chat-input {
+//                     flex: 1;
+//                     padding: 10px 14px;
+//                     border-radius: 10px;
+//                     border: 1px solid rgba(255, 255, 255, 0.1);
+//                     background: rgba(30, 41, 59, 0.8);
+//                     color: white;
+//                     font-size: 13px;
+//                     outline: none;
+//                 }
+
+//                 .chat-input.disabled {
+//                     opacity: 0.6;
+//                     cursor: not-allowed;
+//                 }
+
+//                 .send-button {
+//                     padding: 10px 20px;
+//                     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+//                     color: white;
+//                     border: none;
+//                     border-radius: 10px;
+//                     cursor: pointer;
+//                     font-weight: 600;
+//                     font-size: 13px;
+//                     min-width: 70px;
+//                 }
+
+//                 .send-button.disabled {
+//                     opacity: 0.5;
+//                     cursor: not-allowed;
+//                 }
+
+//                 /* Minimized View */
+//                 .minimized-container {
+//                     position: fixed;
+//                     bottom: 20px;
+//                     right: 20px;
+//                     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+//                     color: white;
+//                     padding: 10px 16px;
+//                     border-radius: 40px;
+//                     cursor: pointer;
+//                     display: flex;
+//                     align-items: center;
+//                     gap: 8px;
+//                     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+//                     z-index: 10000;
+//                     border: 2px solid white;
+//                 }
+
+//                 .minimized-content {
+//                     display: flex;
+//                     align-items: center;
+//                     gap: 8px;
+//                 }
+
+//                 .minimized-icon {
+//                     font-size: 18px;
+//                 }
+
+//                 .minimized-text {
+//                     font-size: 13px;
+//                     font-weight: 500;
+//                 }
+
+//                 /* MOBILE RESPONSIVE STYLES */
 //                 @media (max-width: 768px) {
-//                     /* Ensure chat container doesn't overlap with navbar */
-//                     .chat-container-mobile {
-//                         top: 60px !important;
-//                         height: calc(100vh - 80px) !important;
-//                         width: calc(100% - 20px) !important;
-//                         left: 10px !important;
-//                         right: 10px !important;
+//                     .avatar-container {
+//                         bottom: 15px;
+//                         right: 15px;
 //                     }
-                    
-//                     /* Ensure avatar is properly positioned */
-//                     .avatar-mobile {
-//                         bottom: 15px !important;
-//                         right: 15px !important;
+
+//                     .avatar {
+//                         width: 50px;
+//                         height: 50px;
 //                     }
-                    
-//                     /* Adjust header for mobile */
-//                     .chat-header-mobile {
-//                         padding: 10px 12px !important;
+
+//                     .avatar-icon {
+//                         font-size: 22px;
 //                     }
-                    
-//                     /* Adjust message padding for mobile */
-//                     .message-mobile {
-//                         padding: 8px 10px !important;
-//                         max-width: 90% !important;
+
+//                     .speech-bubble {
+//                         bottom: 60px;
+//                         max-width: 180px;
+//                         font-size: 12px;
+//                         padding: 8px 12px;
 //                     }
-                    
-//                     /* Make input area more compact */
-//                     .input-container-mobile {
-//                         padding: 10px !important;
+
+//                     /* Mobile Chat Window - Bottom Position */
+//                     .chat-container {
+//                         position: fixed;
+//                         bottom: 0;
+//                         left: 0;
+//                         right: 0;
+//                         width: 100%;
+//                         height: 70vh;
+//                         max-height: 70vh;
+//                         border-radius: 16px 16px 0 0;
+//                         z-index: 10001;
 //                     }
-                    
-//                     .input-mobile {
-//                         padding: 8px 10px !important;
-//                         font-size: 14px !important;
+
+//                     .messages-container {
+//                         max-height: calc(70vh - 130px);
+//                         min-height: 200px;
 //                     }
-                    
-//                     .send-button-mobile {
-//                         padding: 8px 15px !important;
-//                         min-width: 60px !important;
-//                         font-size: 14px !important;
+
+//                     .chat-header {
+//                         padding: 12px 15px;
+//                     }
+
+//                     .header-title {
+//                         font-size: 16px;
+//                     }
+
+//                     .header-subtitle {
+//                         font-size: 12px;
+//                     }
+
+//                     .icon-button {
+//                         padding: 6px 10px;
+//                         font-size: 12px;
+//                     }
+
+//                     .user-message,
+//                     .bot-message {
+//                         padding: 10px 12px;
+//                         max-width: 90%;
+//                         font-size: 14px;
+//                     }
+
+//                     .message-content {
+//                         font-size: 14px;
+//                         line-height: 1.5;
+//                     }
+
+//                     .suggestion-list {
+//                         font-size: 14px;
+//                         padding-left: 20px;
+//                     }
+
+//                     .input-container {
+//                         padding: 12px 15px;
+//                     }
+
+//                     .chat-input {
+//                         padding: 12px 15px;
+//                         font-size: 14px;
+//                     }
+
+//                     .send-button {
+//                         padding: 12px 20px;
+//                         font-size: 14px;
+//                         min-width: 80px;
+//                     }
+
+//                     .minimized-container {
+//                         bottom: 15px;
+//                         right: 15px;
+//                         padding: 8px 14px;
+//                     }
+
+//                     .minimized-icon {
+//                         font-size: 16px;
+//                     }
+
+//                     .minimized-text {
+//                         font-size: 12px;
 //                     }
 //                 }
 
+//                 /* Small Mobile Screens */
 //                 @media (max-width: 480px) {
-//                     .chat-container-mobile {
-//                         top: 50px !important;
-//                         height: calc(100vh - 70px) !important;
+//                     .avatar-container {
+//                         bottom: 10px;
+//                         right: 10px;
 //                     }
-                    
-//                     .header-title-mobile {
-//                         font-size: 14px !important;
+
+//                     .avatar {
+//                         width: 45px;
+//                         height: 45px;
 //                     }
-                    
-//                     .header-subtitle-mobile {
-//                         font-size: 10px !important;
+
+//                     .avatar-icon {
+//                         font-size: 20px;
 //                     }
-                    
-//                     .icon-button-mobile {
-//                         padding: 4px 6px !important;
-//                         font-size: 10px !important;
+
+//                     .chat-container {
+//                         height: 65vh;
+//                         max-height: 65vh;
+//                     }
+
+//                     .messages-container {
+//                         max-height: calc(65vh - 130px);
+//                     }
+
+//                     .chat-header {
+//                         padding: 10px 12px;
+//                     }
+
+//                     .header-title {
+//                         font-size: 15px;
+//                     }
+
+//                     .header-subtitle {
+//                         font-size: 11px;
+//                     }
+
+//                     .icon-button {
+//                         padding: 5px 8px;
+//                         font-size: 11px;
+//                     }
+
+//                     .user-message,
+//                     .bot-message {
+//                         padding: 8px 10px;
+//                         font-size: 13px;
+//                     }
+
+//                     .message-content {
+//                         font-size: 13px;
+//                     }
+
+//                     .suggestion-list {
+//                         font-size: 13px;
+//                         padding-left: 18px;
+//                     }
+
+//                     .input-container {
+//                         padding: 10px 12px;
+//                     }
+
+//                     .chat-input {
+//                         padding: 10px 12px;
+//                         font-size: 13px;
+//                     }
+
+//                     .send-button {
+//                         padding: 10px 15px;
+//                         font-size: 13px;
+//                         min-width: 70px;
+//                     }
+
+//                     .minimized-container {
+//                         bottom: 10px;
+//                         right: 10px;
+//                         padding: 6px 12px;
+//                     }
+
+//                     .minimized-text {
+//                         font-size: 11px;
+//                     }
+//                 }
+
+//                 /* Very Small Screens */
+//                 @media (max-width: 360px) {
+//                     .chat-container {
+//                         height: 60vh;
+//                         max-height: 60vh;
+//                     }
+
+//                     .messages-container {
+//                         max-height: calc(60vh - 130px);
+//                     }
+
+//                     .header-title {
+//                         font-size: 14px;
+//                     }
+
+//                     .header-subtitle {
+//                         font-size: 10px;
+//                     }
+
+//                     .icon-button {
+//                         padding: 4px 6px;
+//                         font-size: 10px;
+//                     }
+
+//                     .user-message,
+//                     .bot-message {
+//                         padding: 6px 8px;
+//                         font-size: 12px;
+//                     }
+
+//                     .chat-input {
+//                         padding: 8px 10px;
+//                         font-size: 12px;
+//                     }
+
+//                     .send-button {
+//                         padding: 8px 12px;
+//                         font-size: 12px;
+//                         min-width: 60px;
 //                     }
 //                 }
 //             `}</style>
 //         </>
 //     );
-// };
-
-// const styles = {
-//     // Floating Avatar
-//     avatarContainer: {
-//         position: 'fixed',
-//         bottom: '20px',
-//         right: '20px',
-//         zIndex: 9999,
-//         cursor: 'pointer',
-//         animation: 'float 3s ease-in-out infinite',
-//     },
-//     avatar: {
-//         width: '60px',
-//         height: '60px',
-//         borderRadius: '50%',
-//         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-//         display: 'flex',
-//         alignItems: 'center',
-//         justifyContent: 'center',
-//         boxShadow: '0 8px 32px rgba(102, 126, 234, 0.4)',
-//         border: '3px solid white',
-//         transition: 'all 0.3s ease',
-//     },
-//     avatarIcon: {
-//         fontSize: '28px',
-//         color: 'white',
-//     },
-//     speechBubble: {
-//         position: 'absolute',
-//         bottom: '70px',
-//         right: '0',
-//         background: 'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
-//         color: 'white',
-//         padding: '10px 14px',
-//         borderRadius: '18px 18px 4px 18px',
-//         maxWidth: '220px',
-//         fontSize: '13px',
-//         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
-//         border: '1px solid rgba(255, 255, 255, 0.1)',
-//         animation: 'fadeIn 0.3s ease',
-//         zIndex: 10000,
-//     },
-
-//     // Chat Window - DESKTOP
-//     chatContainer: {
-//         position: 'fixed',
-//         top: '80px',
-//         right: '20px',
-//         width: '350px',
-//         height: 'calc(100vh - 120px)',
-//         background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-//         borderRadius: '16px',
-//         boxShadow: '0 20px 60px rgba(0, 0, 0, 0.4)',
-//         display: 'flex',
-//         flexDirection: 'column',
-//         border: '1px solid rgba(255, 255, 255, 0.1)',
-//         overflow: 'hidden',
-//         zIndex: 10000,
-//         animation: 'fadeIn 0.3s ease',
-//     },
-//     chatHeader: {
-//         background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-//         color: 'white',
-//         padding: '14px 16px',
-//         display: 'flex',
-//         justifyContent: 'space-between',
-//         alignItems: 'center',
-//         borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-//         flexShrink: 0,
-//     },
-//     headerLeft: {
-//         display: 'flex',
-//         alignItems: 'center',
-//         gap: '10px',
-//     },
-//     headerIcon: {
-//         fontSize: '22px',
-//     },
-//     headerTitle: {
-//         margin: 0,
-//         fontSize: '15px',
-//         fontWeight: '600',
-//     },
-//     headerSubtitle: {
-//         margin: 0,
-//         fontSize: '11px',
-//         opacity: 0.9,
-//     },
-//     headerActions: {
-//         display: 'flex',
-//         gap: '6px',
-//     },
-//     iconButton: {
-//         background: 'rgba(255, 255, 255, 0.1)',
-//         border: 'none',
-//         color: 'white',
-//         padding: '5px 10px',
-//         borderRadius: '6px',
-//         cursor: 'pointer',
-//         fontSize: '11px',
-//         fontWeight: '500',
-//         transition: 'all 0.2s ease',
-//         display: 'flex',
-//         alignItems: 'center',
-//         gap: '4px',
-//     },
-
-//     // Messages Container
-//     messagesContainer: {
-//         flex: 1,
-//         padding: '16px',
-//         overflowY: 'auto',
-//         background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
-//     },
-//     welcomeMessage: {
-//         marginBottom: '16px',
-//         animation: 'fadeIn 0.5s ease',
-//     },
-//     userMessage: {
-//         background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
-//         color: 'white',
-//         padding: '10px 14px',
-//         borderRadius: '16px 16px 4px 16px',
-//         marginBottom: '10px',
-//         maxWidth: '85%',
-//         marginLeft: 'auto',
-//         animation: 'fadeIn 0.3s ease',
-//     },
-//     botMessage: {
-//         background: 'rgba(30, 41, 59, 0.8)',
-//         color: '#e2e8f0',
-//         padding: '10px 14px',
-//         borderRadius: '16px 16px 16px 4px',
-//         marginBottom: '10px',
-//         maxWidth: '85%',
-//         border: '1px solid rgba(255, 255, 255, 0.05)',
-//         animation: 'fadeIn 0.3s ease',
-//     },
-//     messageContent: {
-//         marginTop: '6px',
-//         fontSize: '13px',
-//         lineHeight: '1.4',
-//     },
-//     suggestionList: {
-//         margin: '8px 0',
-//         paddingLeft: '18px',
-//         fontSize: '13px',
-//     },
-
-//     // Typing Indicator
-//     typingIndicator: {
-//         display: 'flex',
-//         alignItems: 'center',
-//         marginTop: '8px',
-//     },
-//     dot: {
-//         width: '7px',
-//         height: '7px',
-//         borderRadius: '50%',
-//         backgroundColor: '#94a3b8',
-//         margin: '0 2px',
-//         animation: 'pulse 1.4s ease-in-out infinite',
-//     },
-
-//     // Input Area
-//     inputContainer: {
-//         padding: '14px',
-//         borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-//         background: 'rgba(15, 23, 42, 0.9)',
-//         display: 'flex',
-//         gap: '8px',
-//         flexShrink: 0,
-//     },
-//     input: {
-//         flex: 1,
-//         padding: '10px 14px',
-//         borderRadius: '10px',
-//         border: '1px solid rgba(255, 255, 255, 0.1)',
-//         background: 'rgba(30, 41, 59, 0.8)',
-//         color: 'white',
-//         fontSize: '13px',
-//         outline: 'none',
-//         transition: 'all 0.2s ease',
-//     },
-//     inputDisabled: {
-//         opacity: 0.6,
-//         cursor: 'not-allowed',
-//     },
-//     sendButton: {
-//         padding: '10px 20px',
-//         background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-//         color: 'white',
-//         border: 'none',
-//         borderRadius: '10px',
-//         cursor: 'pointer',
-//         fontWeight: '600',
-//         fontSize: '13px',
-//         transition: 'all 0.2s ease',
-//         minWidth: '70px',
-//     },
-//     sendButtonDisabled: {
-//         opacity: 0.5,
-//         cursor: 'not-allowed',
-//     },
-
-//     // Minimized View
-//     minimizedContainer: {
-//         position: 'fixed',
-//         bottom: '20px',
-//         right: '20px',
-//         background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-//         color: 'white',
-//         padding: '10px 16px',
-//         borderRadius: '40px',
-//         cursor: 'pointer',
-//         display: 'flex',
-//         alignItems: 'center',
-//         gap: '8px',
-//         boxShadow: '0 8px 32px rgba(102, 126, 234, 0.4)',
-//         zIndex: 9999,
-//         animation: 'bounce 2s ease-in-out infinite',
-//         border: '2px solid white',
-//     },
-//     minimizedContent: {
-//         display: 'flex',
-//         alignItems: 'center',
-//         gap: '8px',
-//     },
-//     minimizedIcon: {
-//         fontSize: '18px',
-//     },
-//     minimizedText: {
-//         fontSize: '13px',
-//         fontWeight: '500',
-//     },
-
-//     // MOBILE STYLES - Using different approach
-//     '@media (max-width: 768px)': {
-//         avatarContainer: {
-//             position: 'fixed',
-//             bottom: '15px',
-//             right: '15px',
-//             zIndex: 9999,
-//             cursor: 'pointer',
-//             animation: 'float 3s ease-in-out infinite',
-//         },
-//         avatar: {
-//             width: '50px',
-//             height: '50px',
-//             borderRadius: '50%',
-//             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-//             display: 'flex',
-//             alignItems: 'center',
-//             justifyContent: 'center',
-//             boxShadow: '0 6px 20px rgba(102, 126, 234, 0.4)',
-//             border: '2px solid white',
-//         },
-//         avatarIcon: {
-//             fontSize: '24px',
-//             color: 'white',
-//         },
-//         speechBubble: {
-//             position: 'absolute',
-//             bottom: '60px',
-//             right: '0',
-//             background: 'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
-//             color: 'white',
-//             padding: '8px 12px',
-//             borderRadius: '16px 16px 4px 16px',
-//             maxWidth: '180px',
-//             fontSize: '12px',
-//             boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)',
-//             border: '1px solid rgba(255, 255, 255, 0.1)',
-//             animation: 'fadeIn 0.3s ease',
-//             zIndex: 10000,
-//         },
-//         chatContainer: {
-//             position: 'fixed',
-//             top: '60px',
-//             right: '10px',
-//             left: '10px',
-//             width: 'calc(100% - 20px)',
-//             height: 'calc(100vh - 80px)',
-//             background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-//             borderRadius: '12px',
-//             boxShadow: '0 15px 40px rgba(0, 0, 0, 0.4)',
-//             display: 'flex',
-//             flexDirection: 'column',
-//             border: '1px solid rgba(255, 255, 255, 0.1)',
-//             overflow: 'hidden',
-//             zIndex: 10000,
-//             animation: 'fadeIn 0.3s ease',
-//         },
-//         chatHeader: {
-//             background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-//             color: 'white',
-//             padding: '10px 12px',
-//             display: 'flex',
-//             justifyContent: 'space-between',
-//             alignItems: 'center',
-//             borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-//             flexShrink: 0,
-//         },
-//         headerLeft: {
-//             display: 'flex',
-//             alignItems: 'center',
-//             gap: '8px',
-//         },
-//         headerIcon: {
-//             fontSize: '20px',
-//         },
-//         headerTitle: {
-//             margin: 0,
-//             fontSize: '14px',
-//             fontWeight: '600',
-//         },
-//         headerSubtitle: {
-//             margin: 0,
-//             fontSize: '10px',
-//             opacity: 0.9,
-//         },
-//         headerActions: {
-//             display: 'flex',
-//             gap: '4px',
-//         },
-//         iconButton: {
-//             background: 'rgba(255, 255, 255, 0.1)',
-//             border: 'none',
-//             color: 'white',
-//             padding: '4px 6px',
-//             borderRadius: '6px',
-//             cursor: 'pointer',
-//             fontSize: '10px',
-//             fontWeight: '500',
-//             transition: 'all 0.2s ease',
-//             display: 'flex',
-//             alignItems: 'center',
-//             gap: '2px',
-//         },
-//         messagesContainer: {
-//             flex: 1,
-//             padding: '12px',
-//             overflowY: 'auto',
-//             background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
-//         },
-//         welcomeMessage: {
-//             marginBottom: '12px',
-//             animation: 'fadeIn 0.5s ease',
-//         },
-//         userMessage: {
-//             background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
-//             color: 'white',
-//             padding: '8px 10px',
-//             borderRadius: '14px 14px 4px 14px',
-//             marginBottom: '8px',
-//             maxWidth: '90%',
-//             marginLeft: 'auto',
-//             animation: 'fadeIn 0.3s ease',
-//         },
-//         botMessage: {
-//             background: 'rgba(30, 41, 59, 0.8)',
-//             color: '#e2e8f0',
-//             padding: '8px 10px',
-//             borderRadius: '14px 14px 14px 4px',
-//             marginBottom: '8px',
-//             maxWidth: '90%',
-//             border: '1px solid rgba(255, 255, 255, 0.05)',
-//             animation: 'fadeIn 0.3s ease',
-//         },
-//         messageContent: {
-//             marginTop: '4px',
-//             fontSize: '12px',
-//             lineHeight: '1.4',
-//         },
-//         suggestionList: {
-//             margin: '6px 0',
-//             paddingLeft: '16px',
-//             fontSize: '12px',
-//         },
-//         inputContainer: {
-//             padding: '10px',
-//             borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-//             background: 'rgba(15, 23, 42, 0.9)',
-//             display: 'flex',
-//             gap: '6px',
-//             flexShrink: 0,
-//         },
-//         input: {
-//             flex: 1,
-//             padding: '8px 10px',
-//             borderRadius: '8px',
-//             border: '1px solid rgba(255, 255, 255, 0.1)',
-//             background: 'rgba(30, 41, 59, 0.8)',
-//             color: 'white',
-//             fontSize: '12px',
-//             outline: 'none',
-//             transition: 'all 0.2s ease',
-//         },
-//         sendButton: {
-//             padding: '8px 15px',
-//             background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-//             color: 'white',
-//             border: 'none',
-//             borderRadius: '8px',
-//             cursor: 'pointer',
-//             fontWeight: '600',
-//             fontSize: '12px',
-//             transition: 'all 0.2s ease',
-//             minWidth: '60px',
-//         },
-//         minimizedContainer: {
-//             position: 'fixed',
-//             bottom: '15px',
-//             right: '15px',
-//             background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-//             color: 'white',
-//             padding: '8px 12px',
-//             borderRadius: '30px',
-//             cursor: 'pointer',
-//             display: 'flex',
-//             alignItems: 'center',
-//             gap: '6px',
-//             boxShadow: '0 6px 20px rgba(102, 126, 234, 0.4)',
-//             zIndex: 9999,
-//             animation: 'bounce 2s ease-in-out infinite',
-//             border: '2px solid white',
-//         },
-//         minimizedIcon: {
-//             fontSize: '16px',
-//         },
-//         minimizedText: {
-//             fontSize: '12px',
-//             fontWeight: '500',
-//         },
-//     },
-
-//     '@media (max-width: 480px)': {
-//         chatContainer: {
-//             top: '50px',
-//             height: 'calc(100vh - 70px)',
-//             right: '8px',
-//             left: '8px',
-//             width: 'calc(100% - 16px)',
-//         },
-//         avatarContainer: {
-//             bottom: '10px',
-//             right: '10px',
-//         },
-//         avatar: {
-//             width: '45px',
-//             height: '45px',
-//         },
-//         avatarIcon: {
-//             fontSize: '22px',
-//         },
-//         headerTitle: {
-//             fontSize: '13px',
-//         },
-//         headerSubtitle: {
-//             fontSize: '9px',
-//         },
-//         iconButton: {
-//             padding: '3px 5px',
-//             fontSize: '9px',
-//         },
-//     },
 // };
 
 // export default Chatbot;
@@ -999,7 +915,6 @@ import { useState, useEffect, useRef } from "react";
 import { FaRobot, FaTimes, FaCompress } from "react-icons/fa";
 
 const API_KEY = process.env.REACT_APP_GROQ_API_KEY;
-console.log("Your key is", API_KEY);
 const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const Chatbot = () => {
@@ -1010,8 +925,10 @@ const Chatbot = () => {
     const [isMinimized, setIsMinimized] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [showWelcome, setShowWelcome] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
     const messagesEndRef = useRef(null);
     const inputRef = useRef(null);
+    const chatContainerRef = useRef(null);
 
     const RESUME_CONTEXT = `
 Name: Prasad I Patil
@@ -1046,7 +963,6 @@ Projects:
 
 explaintion
 
-
 1) AI-Biller — AI-Based Billing System  
 Developed an AI-powered automated billing system that modernizes the traditional checkout process.
 
@@ -1063,7 +979,6 @@ Key Features:
 
 Tech Stack:
 Python, YOLO, MongoDB, Express.js, React.js, Node.js
-
 
 2) CRIMSON — AI-Based Criminal Activity Detection  
 CRIMSON is an AI-powered criminal activity detection system designed to assist authorities by identifying criminals, weapons, and violent activities in real time.
@@ -1099,7 +1014,6 @@ Use Case:
 - Identification of weapons and violent behavior
 - Real-time alerts with proof and location details
 
-
 3) Ligand Software Solutions Website (Official Company Website)  
 Website: https://ligandsoftwares.com
 
@@ -1119,7 +1033,6 @@ Technology Stack:
 - Database: MongoDB
 - Architecture: MERN Stack
 
-
 4) Gururaj Foundation Website (NGO Website)  
 Website: https://gururajfoundation.com
 
@@ -1135,7 +1048,6 @@ Key Features:
 Technology Used:
 - Frontend: React.js / HTML, CSS, JavaScript
 - Deployment: Web hosting with optimized performance
-
 
 5) Ligand Work-Space — Ongoing LMS Project  
 Website: https://liganddevelopers.vercel.app
@@ -1181,7 +1093,6 @@ Address: Haragapur, Sankeshwar, Belagavi District, Karnataka
 Date of Birth: 22 September 2004
 
 Rules:
-Rules:
 1. Answer STRICTLY using ONLY the information provided in this resume context.
 2. Do NOT provide information about topics unrelated to this profile such as emotions, love, games, movies, personal opinions, or general knowledge.
     if ask about this say sorry iam not able to respose plz ask prasad's related quetions
@@ -1191,11 +1102,40 @@ Rules:
 6. Do NOT share GitHub links for any project under any circumstance.
 7. If the requested information is not present in this resume or social profiles, respond with:
    "Sorry, this information is not available. Please contact Prasad at patilprasad3808@gmail.com or 8549076433."
-
 `;
 
+    // Check if mobile on mount and resize
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        // Handle keyboard appearance on mobile
+        const handleResize = () => {
+            if (isMobile && isOpen && chatContainerRef.current) {
+                setTimeout(() => {
+                    if (messagesEndRef.current) {
+                        messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 300);
+            }
+        };
+        
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+            window.removeEventListener('resize', checkMobile);
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [isMobile, isOpen]);
+
     const scrollToBottom = () => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+        if (messagesEndRef.current) {
+            messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     useEffect(() => {
@@ -1264,7 +1204,8 @@ Rules:
             setLoading(false);
             setTimeout(() => {
                 inputRef.current?.focus();
-            }, 50);
+                scrollToBottom();
+            }, 100);
         }
     };
 
@@ -1280,7 +1221,8 @@ Rules:
         setShowWelcome(true);
         setTimeout(() => {
             inputRef.current?.focus();
-        }, 50);
+            scrollToBottom();
+        }, 100);
     };
 
     if (isMinimized) {
@@ -1299,6 +1241,7 @@ Rules:
             {/* Floating Avatar */}
             {!isOpen && (
                 <div 
+                    data-avatar="true"
                     style={styles.avatarContainer}
                     onMouseEnter={() => setIsVisible(true)}
                     onMouseLeave={() => setIsVisible(false)}
@@ -1312,7 +1255,7 @@ Rules:
                     <div style={styles.avatar}>
                         <FaRobot style={styles.avatarIcon} />
                     </div>
-                    {isVisible && (
+                    {isVisible && !isMobile && (
                         <div style={styles.speechBubble}>
                             Hi! Ask me about Prasad's skills, projects, and experience.
                         </div>
@@ -1322,121 +1265,170 @@ Rules:
 
             {/* Chat Window */}
             {isOpen && (
-                <div style={styles.chatContainer}>
-                    <div style={styles.chatHeader}>
-                        <div style={styles.headerLeft}>
-                            <FaRobot style={styles.headerIcon} />
-                            <div>
-                                <h3 style={styles.headerTitle}>Prasad's AI Assistant</h3>
-                                <p style={styles.headerSubtitle}>Ask about my skills, projects & experience</p>
+                <div 
+                    ref={chatContainerRef}
+                    style={isMobile ? styles.mobileChatContainer : styles.chatContainer}
+                >
+                    <div style={styles.chatWrapper}>
+                        <div style={styles.chatHeader}>
+                            <div style={styles.headerLeft}>
+                                <FaRobot style={styles.headerIcon} />
+                                <div>
+                                    <h3 style={styles.headerTitle}>Prasad's AI Assistant</h3>
+                                    <p style={styles.headerSubtitle}>Ask about my skills, projects & experience</p>
+                                </div>
+                            </div>
+                            <div style={styles.headerActions}>
+                                <button 
+                                    onClick={() => setIsMinimized(true)}
+                                    style={styles.iconButton}
+                                    title="Minimize"
+                                    disabled={loading}
+                                >
+                                    <FaCompress />
+                                </button>
+                                <button 
+                                    onClick={clearChat}
+                                    style={styles.iconButton}
+                                    title="Clear Chat"
+                                    disabled={loading}
+                                >
+                                    Clear
+                                </button>
+                                <button 
+                                    onClick={() => setIsOpen(false)}
+                                    style={styles.iconButton}
+                                    title="Close"
+                                    disabled={loading}
+                                >
+                                    <FaTimes />
+                                </button>
                             </div>
                         </div>
-                        <div style={styles.headerActions}>
-                            <button 
-                                onClick={() => setIsMinimized(true)}
-                                style={styles.iconButton}
-                                title="Minimize"
-                                disabled={loading}
-                            >
-                                <FaCompress />
-                            </button>
-                            <button 
-                                onClick={clearChat}
-                                style={styles.iconButton}
-                                title="Clear Chat"
-                                disabled={loading}
-                            >
-                                Clear
-                            </button>
-                            <button 
-                                onClick={() => setIsOpen(false)}
-                                style={styles.iconButton}
-                                title="Close"
-                                disabled={loading}
-                            >
-                                <FaTimes />
-                            </button>
-                        </div>
-                    </div>
 
-                    <div style={styles.messagesContainer}>
-                        {showWelcome && (
-                            <div style={styles.welcomeMessage}>
+                        <div style={styles.messagesContainer}>
+                            {showWelcome && (
+                                <div style={styles.welcomeMessage}>
+                                    <div style={styles.botMessage}>
+                                        <div style={styles.messageHeader}>
+                                            <strong>🤖 AI Assistant:</strong>
+                                        </div>
+                                        <div style={styles.messageContent}>
+                                            <p>Hello! I'm Prasad's AI assistant. You can ask me about Prasad's:</p>
+                                            <ul style={styles.suggestionList}>
+                                                <li style={styles.suggestionItem}>📚 Education & qualifications</li>
+                                                <li style={styles.suggestionItem}>💼 Work experience & skills</li>
+                                                <li style={styles.suggestionItem}>🚀 Projects </li>
+                                                <li style={styles.suggestionItem}>📞 Contact information</li>
+                                                <li style={styles.suggestionItem}>🔗 Social media Links</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {messages.map((msg, i) => (
+                                <div 
+                                    key={i} 
+                                    style={msg.role === "user" ? styles.userMessage : styles.botMessage}
+                                >
+                                    <div style={styles.messageHeader}>
+                                        <strong>{msg.role === "user" ? "👤 You:" : "🤖 AI Assistant:"}</strong>
+                                    </div>
+                                    <div style={styles.messageContent}>
+                                        {msg.content.split('\n').map((line, idx) => (
+                                            <p key={idx} style={styles.messageParagraph}>
+                                                {line}
+                                            </p>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                            
+                            {loading && (
                                 <div style={styles.botMessage}>
-                                    <strong>🤖 AI Assistant:</strong>
-                                    <p>Hello! I'm Prasad's AI assistant. You can ask me about Prasad's:</p>
-                                    <ul style={styles.suggestionList}>
-                                        <li>📚 Education & qualifications</li>
-                                        <li>💼 Work experience & skills</li>
-                                        <li>🚀 Projects </li>
-                                        <li>📞 Contact information</li>
-                                        <li>🔗 Social media Links</li>
-                                    </ul>
+                                    <div style={styles.messageHeader}>
+                                        <strong>🤖 AI Assistant:</strong>
+                                    </div>
+                                    <div style={styles.typingContainer}>
+                                        <div style={styles.typingIndicator}>
+                                            <span className="dot" style={styles.dot}></span>
+                                            <span className="dot" style={styles.dot}></span>
+                                            <span className="dot" style={styles.dot}></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        )}
+                            )}
+                            <div ref={messagesEndRef} style={styles.bottomSpacer} />
+                        </div>
 
-                        {messages.map((msg, i) => (
-                            <div 
-                                key={i} 
-                                style={msg.role === "user" ? styles.userMessage : styles.botMessage}
+                        <div style={styles.inputContainer}>
+                            <input
+                                ref={inputRef}
+                                value={input}
+                                onChange={(e) => setInput(e.target.value)}
+                                onKeyPress={handleKeyPress}
+                                placeholder="Ask about skills, projects, education..."
+                                style={{
+                                    ...styles.input,
+                                    ...(loading && styles.inputDisabled)
+                                }}
+                                disabled={loading}
+                            />
+                            <button
+                                onClick={sendMessage}
+                                style={{
+                                    ...styles.sendButton,
+                                    ...((loading || !input.trim()) && styles.sendButtonDisabled)
+                                }}
+                                disabled={loading || !input.trim()}
                             >
-                                <strong>{msg.role === "user" ? "👤 You:" : "🤖 AI Assistant:"}</strong>
-                                <div style={styles.messageContent}>
-                                    {msg.content.split('\n').map((line, idx) => (
-                                        <p key={idx} style={{ margin: '4px 0' }}>
-                                            {line}
-                                        </p>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                        
-                        {loading && (
-                            <div style={styles.botMessage}>
-                                <strong>🤖 AI Assistant:</strong>
-                                <div style={styles.typingIndicator}>
-                                    <span style={styles.dot}></span>
-                                    <span style={styles.dot}></span>
-                                    <span style={styles.dot}></span>
-                                </div>
-                            </div>
-                        )}
-                        <div ref={messagesEndRef} />
-                    </div>
-
-                    <div style={styles.inputContainer}>
-                        <input
-                            ref={inputRef}
-                            value={input}
-                            onChange={(e) => setInput(e.target.value)}
-                            onKeyPress={handleKeyPress}
-                            placeholder="Ask about skills, projects, education..."
-                            style={{
-                                ...styles.input,
-                                ...(loading && styles.inputDisabled)
-                            }}
-                            disabled={loading}
-                        />
-                        <button
-                            onClick={sendMessage}
-                            style={{
-                                ...styles.sendButton,
-                                ...((loading || !input.trim()) && styles.sendButtonDisabled)
-                            }}
-                            disabled={loading || !input.trim()}
-                        >
-                            {loading ? "..." : "Send"}
-                        </button>
+                                {loading ? "..." : "Send"}
+                            </button>
+                        </div>
                     </div>
                 </div>
             )}
+
+            <style jsx>{`
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(10px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+
+                @keyframes pulse {
+                    0%, 100% { opacity: 1; }
+                    50% { opacity: 0.5; }
+                }
+
+                @keyframes float {
+                    0%, 100% { transform: translateY(0px); }
+                    50% { transform: translateY(-10px); }
+                }
+
+                @keyframes bounce {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-5px); }
+                }
+
+                .dot:nth-child(1) { animation-delay: 0s; }
+                .dot:nth-child(2) { animation-delay: 0.2s; }
+                .dot:nth-child(3) { animation-delay: 0.4s; }
+
+                /* Prevent body scrolling when chat is open on mobile */
+                body.chat-open {
+                    overflow: hidden;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                }
+            `}</style>
         </>
     );
 };
 
 const styles = {
-    // Floating Avatar - BASE
+    // Floating Avatar
     avatarContainer: {
         position: 'fixed',
         bottom: '20px',
@@ -1477,161 +1469,240 @@ const styles = {
         zIndex: 10000,
     },
 
-    // Chat Window - BASE
+    // Desktop Chat Container with full padding
     chatContainer: {
         position: 'fixed',
         top: '80px',
         right: '20px',
-        width: '350px',
+        width: '420px', // Increased width for better padding
         height: 'calc(100vh - 120px)',
+        maxHeight: '600px',
         background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-        borderRadius: '16px',
+        borderRadius: '20px',
         boxShadow: '0 20px 60px rgba(0, 0, 0, 0.4)',
-        display: 'flex',
-        flexDirection: 'column',
         border: '1px solid rgba(255, 255, 255, 0.1)',
         overflow: 'hidden',
         zIndex: 10000,
+        animation: 'fadeIn 0.3s ease',
     },
+
+    // Mobile Chat Container - Bottom sheet with full padding
+    mobileChatContainer: {
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        width: '100%',
+        height: '75vh',
+        maxHeight: '75vh',
+        borderRadius: '20px 20px 0 0',
+        background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        borderBottom: 'none',
+        boxShadow: '0 -10px 40px rgba(0, 0, 0, 0.3)',
+        overflow: 'hidden',
+        zIndex: 10001,
+        animation: 'fadeIn 0.3s ease',
+    },
+
+    // Wrapper for inner content with padding on all sides
+    chatWrapper: {
+        padding: '16px',
+        height: '100%',
+        width: '100%',
+        boxSizing: 'border-box',
+        display: 'flex',
+        flexDirection: 'column',
+        overflow: 'hidden',
+    },
+
+    // Header
     chatHeader: {
         background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
         color: 'white',
-        padding: '14px 16px',
+        padding: '16px',
+        borderRadius: '14px',
+        marginBottom: '16px',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
         flexShrink: 0,
+        boxShadow: '0 4px 20px rgba(99, 102, 241, 0.2)',
     },
     headerLeft: {
         display: 'flex',
         alignItems: 'center',
-        gap: '10px',
+        gap: '12px',
     },
     headerIcon: {
-        fontSize: '22px',
+        fontSize: '24px',
     },
     headerTitle: {
         margin: 0,
-        fontSize: '15px',
-        fontWeight: '600',
+        fontSize: '16px',
+        fontWeight: '700',
+        lineHeight: '1.3',
     },
     headerSubtitle: {
-        margin: 0,
-        fontSize: '11px',
-        opacity: 0.9,
+        margin: '4px 0 0 0',
+        fontSize: '12px',
+        opacity: 0.95,
+        lineHeight: '1.2',
     },
     headerActions: {
         display: 'flex',
-        gap: '6px',
+        gap: '8px',
     },
     iconButton: {
-        background: 'rgba(255, 255, 255, 0.1)',
+        background: 'rgba(255, 255, 255, 0.15)',
         border: 'none',
         color: 'white',
-        padding: '5px 10px',
-        borderRadius: '6px',
+        padding: '6px 12px',
+        borderRadius: '8px',
         cursor: 'pointer',
-        fontSize: '11px',
-        fontWeight: '500',
+        fontSize: '12px',
+        fontWeight: '600',
         transition: 'all 0.2s ease',
         display: 'flex',
         alignItems: 'center',
         gap: '4px',
+        minHeight: '34px',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
     },
 
     // Messages Container
     messagesContainer: {
         flex: 1,
-        padding: '16px',
+        padding: '8px 4px',
         overflowY: 'auto',
-        background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
+        background: 'rgba(15, 23, 42, 0.3)',
+        borderRadius: '12px',
+        marginBottom: '16px',
+        WebkitOverflowScrolling: 'touch',
+        border: '1px solid rgba(255, 255, 255, 0.05)',
     },
     welcomeMessage: {
         marginBottom: '16px',
+        animation: 'fadeIn 0.5s ease',
     },
+    
+    // Message Bubbles
     userMessage: {
         background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
         color: 'white',
-        padding: '10px 14px',
-        borderRadius: '16px 16px 4px 16px',
-        marginBottom: '10px',
+        padding: '14px 16px',
+        borderRadius: '18px 18px 4px 18px',
+        marginBottom: '12px',
         maxWidth: '85%',
         marginLeft: 'auto',
+        animation: 'fadeIn 0.3s ease',
+        boxShadow: '0 4px 15px rgba(59, 130, 246, 0.25)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
     },
     botMessage: {
-        background: 'rgba(30, 41, 59, 0.8)',
+        background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(51, 65, 85, 0.95) 100%)',
         color: '#e2e8f0',
-        padding: '10px 14px',
-        borderRadius: '16px 16px 16px 4px',
-        marginBottom: '10px',
+        padding: '14px 16px',
+        borderRadius: '18px 18px 18px 4px',
+        marginBottom: '12px',
         maxWidth: '85%',
-        border: '1px solid rgba(255, 255, 255, 0.05)',
+        border: '1px solid rgba(255, 255, 255, 0.08)',
+        animation: 'fadeIn 0.3s ease',
+        boxShadow: '0 4px 15px rgba(0, 0, 0, 0.15)',
+    },
+    messageHeader: {
+        marginBottom: '8px',
+        fontSize: '13px',
+        fontWeight: '600',
+        opacity: 0.95,
     },
     messageContent: {
-        marginTop: '6px',
-        fontSize: '13px',
-        lineHeight: '1.4',
+        fontSize: '14px',
+        lineHeight: '1.5',
+    },
+    messageParagraph: {
+        margin: '6px 0',
+        padding: 0,
     },
     suggestionList: {
-        margin: '8px 0',
-        paddingLeft: '18px',
+        margin: '12px 0 0 0',
+        paddingLeft: '20px',
         fontSize: '13px',
+        lineHeight: '1.6',
+    },
+    suggestionItem: {
+        marginBottom: '8px',
+        padding: '2px 0',
+    },
+    bottomSpacer: {
+        height: '8px',
     },
 
     // Typing Indicator
+    typingContainer: {
+        marginTop: '10px',
+    },
     typingIndicator: {
         display: 'flex',
         alignItems: 'center',
-        marginTop: '8px',
+        gap: '6px',
+        padding: '4px 0',
     },
     dot: {
-        width: '7px',
-        height: '7px',
+        width: '8px',
+        height: '8px',
         borderRadius: '50%',
         backgroundColor: '#94a3b8',
-        margin: '0 2px',
+        animation: 'pulse 1.4s ease-in-out infinite',
     },
 
     // Input Area
     inputContainer: {
-        padding: '14px',
-        borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-        background: 'rgba(15, 23, 42, 0.9)',
+        padding: '0',
+        background: 'transparent',
         display: 'flex',
-        gap: '8px',
+        gap: '12px',
         flexShrink: 0,
+        alignItems: 'center',
     },
     input: {
         flex: 1,
-        padding: '10px 14px',
-        borderRadius: '10px',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        background: 'rgba(30, 41, 59, 0.8)',
+        padding: '14px 18px',
+        borderRadius: '14px',
+        border: '1px solid rgba(255, 255, 255, 0.15)',
+        background: 'rgba(30, 41, 59, 0.95)',
         color: 'white',
-        fontSize: '13px',
+        fontSize: '15px',
         outline: 'none',
         transition: 'all 0.2s ease',
+        minHeight: '48px',
+        lineHeight: '1.4',
+        boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
     },
     inputDisabled: {
         opacity: 0.6,
         cursor: 'not-allowed',
     },
     sendButton: {
-        padding: '10px 20px',
+        padding: '14px 24px',
         background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
         color: 'white',
         border: 'none',
-        borderRadius: '10px',
+        borderRadius: '14px',
         cursor: 'pointer',
-        fontWeight: '600',
-        fontSize: '13px',
+        fontWeight: '700',
+        fontSize: '15px',
         transition: 'all 0.2s ease',
-        minWidth: '70px',
+        minWidth: '90px',
+        minHeight: '48px',
+        boxShadow: '0 4px 20px rgba(99, 102, 241, 0.3)',
+        letterSpacing: '0.3px',
     },
     sendButtonDisabled: {
         opacity: 0.5,
         cursor: 'not-allowed',
+        boxShadow: 'none',
     },
 
     // Minimized View
@@ -1641,283 +1712,215 @@ const styles = {
         right: '20px',
         background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
         color: 'white',
-        padding: '10px 16px',
+        padding: '14px 20px',
         borderRadius: '40px',
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
-        gap: '8px',
-        boxShadow: '0 8px 32px rgba(102, 126, 234, 0.4)',
+        gap: '12px',
+        boxShadow: '0 10px 40px rgba(102, 126, 234, 0.4)',
         zIndex: 9999,
+        animation: 'bounce 2s ease-in-out infinite',
         border: '2px solid white',
     },
     minimizedContent: {
         display: 'flex',
         alignItems: 'center',
-        gap: '8px',
+        gap: '10px',
     },
     minimizedIcon: {
-        fontSize: '18px',
+        fontSize: '22px',
     },
     minimizedText: {
-        fontSize: '13px',
-        fontWeight: '500',
+        fontSize: '15px',
+        fontWeight: '700',
+    },
+
+    // Media Queries for Responsive Design
+    '@media (max-width: 768px)': {
+        avatarContainer: {
+            bottom: '25px',
+            right: '25px',
+            zIndex: 9999,
+        },
+        avatar: {
+            width: '55px',
+            height: '55px',
+            boxShadow: '0 10px 30px rgba(102, 126, 234, 0.4)',
+            border: '2px solid white',
+        },
+        avatarIcon: {
+            fontSize: '26px',
+        },
+        speechBubble: {
+            display: 'none',
+        },
+        mobileChatContainer: {
+            height: '80vh',
+            maxHeight: '80vh',
+            borderRadius: '24px 24px 0 0',
+            paddingBottom: 'env(safe-area-inset-bottom)',
+        },
+        chatWrapper: {
+            padding: '20px',
+        },
+        chatHeader: {
+            padding: '18px',
+            borderRadius: '16px',
+            marginBottom: '20px',
+        },
+        headerLeft: {
+            gap: '14px',
+        },
+        headerIcon: {
+            fontSize: '26px',
+        },
+        headerTitle: {
+            fontSize: '17px',
+        },
+        headerSubtitle: {
+            fontSize: '13px',
+            marginTop: '5px',
+        },
+        headerActions: {
+            gap: '10px',
+        },
+        iconButton: {
+            padding: '8px 14px',
+            fontSize: '13px',
+            minHeight: '36px',
+        },
+        messagesContainer: {
+            padding: '12px 8px',
+            marginBottom: '20px',
+            borderRadius: '14px',
+        },
+        userMessage: {
+            padding: '16px 18px',
+            maxWidth: '88%',
+            marginBottom: '14px',
+        },
+        botMessage: {
+            padding: '16px 18px',
+            maxWidth: '88%',
+            marginBottom: '14px',
+        },
+        messageContent: {
+            fontSize: '15px',
+        },
+        suggestionList: {
+            fontSize: '14px',
+        },
+        input: {
+            padding: '16px 20px',
+            fontSize: '16px',
+            minHeight: '52px',
+            borderRadius: '16px',
+        },
+        sendButton: {
+            padding: '16px 28px',
+            fontSize: '16px',
+            minWidth: '100px',
+            minHeight: '52px',
+            borderRadius: '16px',
+        },
+        minimizedContainer: {
+            bottom: '25px',
+            right: '25px',
+            padding: '16px 22px',
+        },
+        minimizedIcon: {
+            fontSize: '24px',
+        },
+        minimizedText: {
+            fontSize: '16px',
+        },
+    },
+
+    '@media (max-width: 480px)': {
+        avatar: {
+            width: '50px',
+            height: '50px',
+        },
+        avatarIcon: {
+            fontSize: '24px',
+        },
+        mobileChatContainer: {
+            height: '85vh',
+            maxHeight: '85vh',
+        },
+        chatWrapper: {
+            padding: '16px',
+        },
+        chatHeader: {
+            padding: '16px',
+            marginBottom: '16px',
+        },
+        headerTitle: {
+            fontSize: '16px',
+        },
+        headerSubtitle: {
+            fontSize: '12px',
+        },
+        iconButton: {
+            padding: '7px 12px',
+            fontSize: '12px',
+        },
+        userMessage: {
+            padding: '14px 16px',
+            maxWidth: '90%',
+        },
+        botMessage: {
+            padding: '14px 16px',
+            maxWidth: '90%',
+        },
+        messageContent: {
+            fontSize: '14px',
+        },
+        input: {
+            padding: '14px 16px',
+            fontSize: '14px',
+        },
+        sendButton: {
+            padding: '14px 20px',
+            fontSize: '14px',
+            minWidth: '80px',
+        },
+    },
+
+    '@media (max-width: 380px)': {
+        chatWrapper: {
+            padding: '14px',
+        },
+        chatHeader: {
+            padding: '14px',
+        },
+        headerLeft: {
+            gap: '10px',
+        },
+        headerIcon: {
+            fontSize: '22px',
+        },
+        headerTitle: {
+            fontSize: '15px',
+        },
+        headerSubtitle: {
+            fontSize: '11px',
+        },
+        iconButton: {
+            padding: '6px 10px',
+            fontSize: '11px',
+        },
+        input: {
+            padding: '12px 14px',
+            fontSize: '13px',
+        },
+        sendButton: {
+            padding: '12px 16px',
+            fontSize: '13px',
+            minWidth: '70px',
+        },
     },
 };
 
-// Create a separate CSS stylesheet for better mobile control
-const ChatbotStyles = () => (
-    <style jsx global>{`
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Mobile-first responsive styles */
-        @media (max-width: 768px) {
-            .chatbot-avatar-container {
-                bottom: 15px !important;
-                right: 15px !important;
-            }
-            
-            .chatbot-avatar {
-                width: 50px !important;
-                height: 50px !important;
-            }
-            
-            .chatbot-avatar-icon {
-                font-size: 22px !important;
-            }
-            
-            .chatbot-speech-bubble {
-                bottom: 60px !important;
-                right: 0 !important;
-                max-width: 180px !important;
-                font-size: 12px !important;
-                padding: 8px 12px !important;
-            }
-            
-            .chatbot-container {
-                position: fixed !important;
-                top: 10px !important;
-                right: 10px !important;
-                left: 10px !important;
-                width: calc(100% - 20px) !important;
-                height: calc(100vh - 30px) !important;
-                max-height: 85vh !important;
-                border-radius: 12px !important;
-            }
-            
-            .chatbot-header {
-                padding: 10px 12px !important;
-            }
-            
-            .chatbot-header-title {
-                font-size: 14px !important;
-            }
-            
-            .chatbot-header-subtitle {
-                font-size: 10px !important;
-            }
-            
-            .chatbot-icon-button {
-                padding: 4px 6px !important;
-                font-size: 10px !important;
-            }
-            
-            .chatbot-messages-container {
-                padding: 10px !important;
-            }
-            
-            .chatbot-user-message {
-                padding: 8px 10px !important;
-                max-width: 90% !important;
-                font-size: 12px !important;
-            }
-            
-            .chatbot-bot-message {
-                padding: 8px 10px !important;
-                max-width: 90% !important;
-                font-size: 12px !important;
-            }
-            
-            .chatbot-suggestion-list {
-                font-size: 12px !important;
-                padding-left: 16px !important;
-            }
-            
-            .chatbot-input-container {
-                padding: 10px !important;
-            }
-            
-            .chatbot-input {
-                padding: 8px 10px !important;
-                font-size: 14px !important;
-            }
-            
-            .chatbot-send-button {
-                padding: 8px 15px !important;
-                min-width: 60px !important;
-                font-size: 14px !important;
-            }
-            
-            .chatbot-minimized-container {
-                bottom: 10px !important;
-                right: 10px !important;
-                padding: 8px 12px !important;
-            }
-            
-            .chatbot-minimized-icon {
-                font-size: 16px !important;
-            }
-            
-            .chatbot-minimized-text {
-                font-size: 12px !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .chatbot-container {
-                top: 5px !important;
-                height: calc(100vh - 20px) !important;
-                max-height: 90vh !important;
-            }
-            
-            .chatbot-avatar-container {
-                bottom: 10px !important;
-                right: 10px !important;
-            }
-            
-            .chatbot-avatar {
-                width: 45px !important;
-                height: 45px !important;
-            }
-            
-            .chatbot-avatar-icon {
-                font-size: 20px !important;
-            }
-            
-            .chatbot-header-title {
-                font-size: 13px !important;
-            }
-            
-            .chatbot-header-subtitle {
-                font-size: 9px !important;
-            }
-            
-            .chatbot-icon-button {
-                padding: 3px 5px !important;
-                font-size: 9px !important;
-            }
-            
-            .chatbot-messages-container {
-                padding: 8px !important;
-            }
-            
-            .chatbot-user-message,
-            .chatbot-bot-message {
-                padding: 6px 8px !important;
-                font-size: 11px !important;
-            }
-            
-            .chatbot-input {
-                padding: 6px 8px !important;
-                font-size: 13px !important;
-            }
-            
-            .chatbot-send-button {
-                padding: 6px 12px !important;
-                min-width: 50px !important;
-                font-size: 13px !important;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .chatbot-container {
-                top: 5px !important;
-                right: 5px !important;
-                left: 5px !important;
-                width: calc(100% - 10px) !important;
-                height: calc(100vh - 15px) !important;
-            }
-            
-            .chatbot-avatar-container {
-                bottom: 8px !important;
-                right: 8px !important;
-            }
-            
-            .chatbot-avatar {
-                width: 40px !important;
-                height: 40px !important;
-            }
-            
-            .chatbot-header {
-                padding: 8px 10px !important;
-            }
-            
-            .chatbot-header-title {
-                font-size: 12px !important;
-            }
-            
-            .chatbot-header-subtitle {
-                font-size: 8px !important;
-            }
-            
-            .chatbot-input-container {
-                padding: 8px !important;
-            }
-        }
-
-        /* Touch-friendly improvements */
-        .chatbot-icon-button {
-            min-height: 28px;
-            min-width: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .chatbot-send-button {
-            min-height: 36px;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-        }
-        
-        .chatbot-input {
-            min-height: 36px;
-        }
-        
-        /* Prevent text selection on mobile */
-        .chatbot-container * {
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
-        }
-        
-        .chatbot-input,
-        .chatbot-messages-container {
-            user-select: text;
-        }
-    `}</style>
-);
-
-// Wrap the component to include global styles
-const ChatbotWithStyles = () => {
-    return (
-        <>
-            <ChatbotStyles />
-            <Chatbot />
-        </>
-    );
-};
-
-export default ChatbotWithStyles;
+export default Chatbot;

@@ -20,7 +20,7 @@ const Layout = () => {
             </div>
             {/* Main Content (Outlet) */}
 
-            <div><Chatbot/></div>
+            <div><Chatbot/> </div>
             <div style={{
                 flex: 1, paddingTop: '75px'
             }}>
