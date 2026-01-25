@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import Chatbot from './Chatbot';
 
 const Layout = () => {
     return (
@@ -14,9 +15,12 @@ const Layout = () => {
                 position: 'fixed', top: 0, width: '100%', zIndex:
                     100
             }}>
+
                 <Header />
             </div>
             {/* Main Content (Outlet) */}
+
+            <div><Chatbot/></div>
             <div style={{
                 flex: 1, paddingTop: '75px'
             }}>

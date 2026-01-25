@@ -8,6 +8,7 @@ import About from './components/PortfolioLayout/About';
 import Experience from './components/PortfolioLayout/Experience';
 import Conatct from './components/PortfolioLayout/Conatct';
 import Education from './components/PortfolioLayout/Education';
+import Chatbot from './components/PortfolioLayout/Chatbot';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
          <Route path='/Experience' element={<Experience/>}></Route>
          <Route path='/contact' element={<Conatct/>}></Route>
          <Route path='/Education' element={<Education/>}></Route>
+         <Route path='/Chatbot' element={<Chatbot/>}></Route>
+
          
         </Route>
         </Routes>
