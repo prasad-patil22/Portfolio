@@ -1187,11 +1187,11 @@ const Projects = () => {
           "Cloud Storage (AWS S3)",
           "REST APIs"
         ],
-       
+
         "images": [
-         
+
           "/Projects/ligand-workspace.png",
-          
+
         ],
         "category": "Ongoing ",
         "features": [
@@ -1241,35 +1241,38 @@ const Projects = () => {
       },
       {
         "id": 5,
-        "name": "CRIMSON – AI Criminal Activity Detection",
-        "shortDescription": "Real-time AI system for detecting criminals, weapons, and violent activity.",
-        "fullDescription": "CRIMSON is an AI-powered surveillance and threat-detection system designed to identify criminals, weapons, and violent activities in real time. Using advanced computer vision models, the system continuously monitors video feeds and triggers immediate alerts when suspicious activity is detected. It sends live location alerts to the admin via email and stores all incident data in a secure database. The platform also includes an interactive admin dashboard for viewing alerts, analyzing incident history, and monitoring system performance.",
+        "name": "AI-Pothole Detection ",
+        "shortDescription": "Real-time AI system for detecting road potholes and sending automated alerts.",
+        "fullDescription": "An AI-powered pothole detection and alert system designed to enhance road safety and infrastructure monitoring. The system uses computer vision and machine learning to analyze live camera feeds and detect potholes in real time. When the detected pothole count exceeds a predefined threshold (10+), the system automatically sends an alert to the admin with live image proof and real-time GPS location. All detected data is securely stored and visualized through an admin dashboard, enabling efficient road maintenance planning and tracking.",
         "technologies": [
           "Python",
-          "YOLO",
+          "Machine Learning",
+          "Computer Vision",
           "OpenCV",
           "Flask",
-          "MongoDB",
-          "React",
-          "SMTP / Email Alerts"
+          "Google Colab",
+          "Kaggle Dataset",
+          "GPS Integration",
+          "Database"
         ],
         "demoLink": null,
         "images": [
-          "/Projects/crimson2.jpg",
-          "/Projects/crimson1.jpg",
-          "/Projects/crimson.jpg"
           
+          "/Projects/pothole1.png",
+          "/Projects/pothole2.png",
+          "/Projects/pothole3.png"
         ],
-        "category": "AI / Surveillance",
+        "category": "AI / Smart Infrastructure",
         "features": [
-          "Real-time criminal and weapon detection",
-          "Violence recognition using computer vision",
-          "Live location alerts sent via email",
-          "Incident storage with timestamp & evidence",
-          "Interactive admin dashboard",
-          "Video feed monitoring & event logs"
+          "Real-time pothole detection using camera feed",
+          "Threshold-based automated alerts",
+          "Live image proof with GPS location",
+          "Centralized database for detected potholes",
+          "Admin dashboard for monitoring and analytics",
+          "Supports road safety and maintenance planning"
         ]
       },
+
       {
         "id": 6,
         "name": "Edupredict – AI Student Performance Analysis",
