@@ -103,7 +103,7 @@ Use Case:
 - Real-time alerts with proof and location details
 
 3) Ligand Software Solutions Website (Official Company Website)  
-Website: ligand-softwares.vercel.app
+Website: https://www.ligand-softwares.vercel.app
 
 - Developed the official company website using the MERN stack
 - Modern dark-themed UI with a custom cursor
