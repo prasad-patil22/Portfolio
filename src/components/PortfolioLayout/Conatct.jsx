@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaGithub,
   FaPaperPlane,
-  FaQuoteLeft,
+  FaQuoteaft,
   FaCode,
   FaLaptopCode,
   FaRobot,

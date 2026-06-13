@@ -1123,7 +1123,7 @@ const Projects = () => {
           "Framer Motion",
           "REST APIs"
         ],
-        "demoLink": "https://ligandsoftware.com",
+        "demoLink": "ligand-softwares.vercel.app",
         "images": [
           "/Projects/ligand-website.png",
           "/Projects/ligand-website2.png",
