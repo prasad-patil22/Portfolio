@@ -97,7 +97,7 @@ const Experience = () => {
     hostedProjects: [
       {
         name: "Ligand Software Official Website",
-        url: "https://www.ligand-softwares.vercel.app",
+        url: "https://ligand-softwares.vercel.app/",
         description: "Company's official website built with modern technologies",
         technologies: ["React.js", "Next.js", "Tailwind CSS", "Node.js"],
         status: "Live ",
