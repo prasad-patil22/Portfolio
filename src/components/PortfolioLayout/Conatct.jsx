@@ -11,7 +11,8 @@ import {
   FaCode,
   FaLaptopCode,
   FaRobot,
-  FaMobile
+  FaMobile,
+  FaQuoteLeft
 } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
